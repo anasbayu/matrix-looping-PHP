@@ -1,25 +1,17 @@
 <?php
-
+	// Do 4 looping to create 4 row
 	for($i = 1; $i <= 4; $i++)
 	{
-		echo "[";
-		
+		// Do the looping to print the column
 		for($j = 1; $j <= $i; $j++)
 		{
-			
-			echo $i;
-			
+			echo "[";
+			echo $i;	// Echo the row order (always the same for the same column).
+			echo ",";
+			echo $j;	// Echo the column order (repeat from 1 after each row).
+			echo "] ";
 		}
 		
-		echo ",";
-		
-		for($k = 1; $k <= $i; $k++)
-		{
-			echo $k;
-			
-		}
-		
-		echo "]";
 		echo "<br>";
 	}
 ?>
